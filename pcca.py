@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 if __name__ == '_main_':
-    dt_heart = pd.read_csv('./metodologia.csv')
+    dt_heart = pd.read_csv('./Sensor.csv')
     print(dt_heart.head(5))
     dt_features = dt_heart.drop(['INCIDENCIA'], axis=1)
     dt_target = dt_heart['INCIDENCIA']
